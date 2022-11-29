@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Scoper.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo-name">
+            <h4><a href="index.html">SCOPER</a></h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="savedPage.html">SAVED</a></li>
+            <li id="saved-emoji">❤️</li>
+            <li><a href="aboutUsPage.html">ABOUT US</a></li>
+        </ul>
+    </nav>
+    <div class="logo-pic">
+        <img class="img-logo" src="images/logo.jpg" alt="logo">
+    </div>
+    <div id="heading">
+        <h1>Discover the latest properties for sale anywhere in UK.</h1>
+    </div>
+    <div id="search-bar">
+        <div id="sortBy">
+            <label for="search">Sort By</label>
+            <select id="sort-select">
+                <option>Select an option</option>
+                <option>Apartment</option>
+                <option>Single-Family Home</option>
+                <option>Multi-Family Home</option>
+                <option>Semi-Detached Home</option>
+                <option>Mansion</option>
+            </select>
+            <label for="search">Minimum Beds</label>
+            <input id="min-beds" type="number" min="1" placeholder="1">
+        </div>
+        <p></p>
+        <button id="search-btn">🔍︎ Search</button>
+        <h1 id="result-count-text"></h1>
+    </div>
+    <div id="new-listing-div">
+        <button id="new-listing-btn">Create New Listing</button>
+    </div>
+            <div class="main-body">
+                <table>
+                  <tbody class="create-listing-temp">
+                    <tr class="listing-temp">
+                        <td id="image-row"><button for="file" id="create-listing-image-btn"> <input type="file" id="img-input"> 
+                        <h3 id="file-txt"> <img id="add-image-btn" src="images/addImage.png" alt=""> Upload Image</h3></button> </td>
+                        <td id="main-desc"><label>Listing Price</label> <input type="number" id="price-input" min="0"></td>
+                        <td><label>House Type</label> <input type="text" id="houseType-input"></td>
+                        <td><label>Address</label> <input type="text" id="address-input"></td>
+                        <td><label>City</label> <input type="text" id="city-input"></td>
+                        <td><label>Bedrooms</label> <input type="number" id="bedroom-input"></td>
+                        <td ><label>Bathrooms</label> <input type="number" id="bathroom-input"></td>
+                        <td id="choice-btn"><button id="cancel-listing-btn">Cancel</button></td>
+                        <td id="choice-btn"><button id="create-listing-btn">Create</button></td>
+                    </tr>
+                </tbody>
+            </table>
+         </div>
+    <div>
+        <table>
+            <tbody id="template-body">
+            </tbody>
+        </table>
+    </div>
+    <footer id="footer">Copyright &copy; 2022, Scoper
+        <div id="follow-us-div">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-github"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+    </footer>
+    <script src="main.js" type="module"></script>
+</body>
+</html>
